@@ -1,2 +1,4 @@
 # my-projects
-Some of my projects are found here
+Here you'll find some of my projects that I've worked on over the years during and after my schooling.
+Currently:
+Traitor!!!
