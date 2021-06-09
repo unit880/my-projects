@@ -1,18 +1,20 @@
-var wind;
-var gravity;
-var drops;
-var splashes;
+let wind;
+let gravity;
+let drops;
+let splashes;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   
   wind = random(-2,2);
-  gravity = random(7,10);
+  gravity = random((displayWidth/windowWidth)*17, (displayHeight/windowHeight)*20);
   drops = [];
   splashes = [];
   
-  for (let i=0; i<100; i++) {
-    drops[i] = new Drop();
+  let dropAmount = (windowWidth+windowHeight)/20;
+
+  for (let i=0; i<dropAmount; i++) {
+    drops.push(new Drop(random(width), random(height)));
   }
 }
 
@@ -25,11 +27,26 @@ function draw() {
   }
   
   for (let i=splashes.length-1; i>=0; i--) {
-    if (splashes[i].sunk) {
-      splice(splashes[i], 1);
-    }
-    
     splashes[i].update();
     splashes[i].show();
+
+    if (splashes[i].sunk) {
+      splashes.splice(i, 1);
+    }
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  gravity = random((displayWidth/windowWidth)*17, (displayHeight/windowHeight)*20);
+
+  let dropDifference = ((windowWidth+windowHeight)/20)-drops.length;
+
+  if (dropDifference >= 0) {
+    for (let i=0; i<dropDifference; i++) {
+      drops.push(new Drop());
+    }
+  } else {
+    drops.splice(0, abs(dropDifference));
   }
 }
