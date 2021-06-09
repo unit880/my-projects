@@ -11,7 +11,7 @@ I've made some improvements to the engine since that last video. Mostly under th
 Video demonstration here: https://youtu.be/Tom0jAc_2Rg
 
 <h1>Raindrops</h1>
-A quick sketch I've made several times in Processing 3. I wanted to port it to p5.js to see how it does and learn it.
+A quick sketch I've made several times in Processing 3. I wanted to port it to p5.js to learn it.
 
 <h1>Traitor!!!</h1>
 An unfinished game I've experimented with for a while now, never fully figured out what it's gonna be to finish it in it's totality.
