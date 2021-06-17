@@ -25,7 +25,7 @@ In an attempt to make more realistic constellations, I experimented with circle 
 Video demonstration here: https://youtu.be/ofdUIJ6cpTA
 
 <h1>meszarosMentalHealth</h1>
-A website I had to make for a PHP final in college, written in I believe eight hours because that's just what you do in college. Probably shows it too.
+A website I made for a PHP final in college. Contains full CRUD operations for a database on a LAMP stack.
 
 <h1>BubbleSort</h1>
 A simple algorithm I had to write for an OOP/Data Structures class I had in college.
