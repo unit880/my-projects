@@ -10,6 +10,11 @@ I've made some improvements to the engine since that last video. Mostly under th
 
 Video demonstration here: https://youtu.be/Tom0jAc_2Rg
 
+<h1>Boids</h1>
+A flocking simulation based off Daniel Shiffman's p5.js one, but done in Processing 3.
+
+Video demonstration here: https://youtu.be/CZSxJvgpLhQ
+
 <h1>Raindrops</h1>
 A quick sketch I've made several times in Processing 3. I wanted to port it to p5.js to learn it.
 
